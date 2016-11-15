@@ -138,6 +138,7 @@
 	font-size: 41px;
 	text-align: center;
 	font-family: Myriad Pro;
+	color: #999999;
 }
 
 .pro-content {
@@ -213,7 +214,7 @@ form p{
 }
 
 .coppyritht {
-	padding: 30px 100px;
+	padding: 40px 100px;
 	color: #999999;
 	font-size: 15px;
 }
