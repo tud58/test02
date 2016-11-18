@@ -307,3 +307,22 @@ form p{
 .nav li a:hover {
 	background-color: #f6f9f9;
 }
+
+.btn {
+	width: auto;
+    height: auto;
+    padding: 15px 50px;
+    margin-left: 10%;
+    color: #fff;
+    background: inherit;
+    border-color: #15A4FA;
+}
+
+.btn:hover {
+	background-color: #15A4FA;
+	color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	color: #15A4FA;
+}

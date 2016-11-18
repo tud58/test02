@@ -39,12 +39,12 @@
                 <span class="icon-bar"></span>                        
               </button>
             </div>
-            <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
+            <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px; float: right;">
               <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#simple">Simple</a></li>
-                <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="a-hover" href="#">Home</a></li>
+                <li><a class="a-hover" href="#simple">Simple</a></li>
+                <li><a class="a-hover" href="#showcase">Showcase</a></li>
+                <li><a class="a-hover" href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -200,7 +200,8 @@ to be used for different projects.</p>
       We ensure quailty & support
       </div>
       
-      <form action="#" method="post" accept-charset="utf-8" name="myForm" ng-show="true">
+      <span ng-show="myForm.myName.$valid && myForm.myEmail.$valid && myForm.myMessage.$valid && myForm.mySubmit.$touched" style="color: #FFF; text-align: center;">Cảm ơn bạn đã điền đầy đủ thông tin!</span>
+      <form action="#" method="post" accept-charset="utf-8" name="myForm" style="display: ;" ng-show=" myForm.myName.$invalid || myForm.myEmail.$invalid || myForm.myMessage.$invalid && !myForm.mySubmit.$touched">
             <p class="name">
               <input type="text" name="myName" ng-model="myName" class="" value=""  placeholder="Full Name" required>
               <br><span ng-show="myForm.myName.$touched && myForm.myName.$invalid" style="color: #FF0000">Bạn chưa nhập tên.</span>
@@ -220,16 +221,7 @@ to be used for different projects.</p>
               <div class="col-sm-3 checkbox" style="padding-left: 40px;  font-size: 15px; color: #fff;">
                 <label><input type="checkbox" value="" style="    margin-right: 0%; ">Subscribe Newsletter</label>
               </div>
-              <div class="button-submit" style="margin-right: 21%;">
-                <div class="so-widget-sow-button so-widget-sow-button-wire-01457d3d4963">
-                  <div class="ow-button-base ow-button-align-center">
-
-                    <a class="ow-button-hover" target="_blank" href="#">
-                      <span>Send</span>
-                    </a>
-                  </div>
-                </div> 
-              </div>
+              <button type="submit" class="btn" name="mySubmit" ng-model="mySubmit">Send</button>
             </p>
       </form>
 
@@ -241,17 +233,25 @@ to be used for different projects.</p>
     <div class="col-sm-1"></div>
       <div class="coppyritht float-left">Copyritht 2014, STRICT</div>
       <div class="footer-icon" style="margin-right: 10%; float: right;">
-        <div class="icon icon-fb float-left">
-          <img src="images/fb.png">
+        <div class="icon icon-fb float-left hovereffect ehover12" style="width: auto;">
+          <a href="https://www.facebook.com/">
+            <img src="images/fb.png">
+          </a>
         </div>
-        <div class="icon icon-tw float-left">
-          <img src="images/tw.png">
+        <div class="icon icon-tw float-left hovereffect ehover12" style="width: auto;">
+          <a href="https://twitter.com/">
+            <img src="images/tw.png">
+          </a>
         </div>
-        <div class="icon icon-gg float-left">
-          <img src="images/gg.png">
+        <div class="icon icon-gg float-left hovereffect ehover12" style="width: auto;">
+          <a href="">
+            <img src="images/gg.png">
+          </a>
         </div>
-        <div class="icon icon-li float-left">
-          <img src="images/li.png">
+        <div class="icon icon-li float-left hovereffect ehover12" style="width: auto;">
+          <a href="">
+            <img src="images/li.png">
+          </a>
         </div>
       </div>
     </div>
